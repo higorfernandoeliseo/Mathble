@@ -124,7 +124,7 @@ const gerarMatriz=() => {
 
     //dicaSpan.innerHTML = 'Clique nos botões abaixo e faça o calculo que gerou o resultado.'
 
-    dicaSpan.innerHTML = 'Digite abaixo a expressão na ordem correta.';
+    dicaSpan.innerHTML = 'Digite a expressão abaixo na ordem correta.';
 
     novaMatriz.style.display = 'block';
     novaMatriz.style.marginLeft = 'auto';
