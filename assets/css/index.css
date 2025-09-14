@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('fonts/Inter-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('fonts/Inter-Bold.ttf');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'inter',Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f3f8;
+}
+
+div#container h1 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+div#container {
+    padding: 25px;
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+div#matrix {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#matrix button {
+    padding: 5px;
+    margin: 4px;
+    font-family: 'inter';
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+}
+
+div#botoes input {
+    padding: 10px;
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+div#botoes button {
+    font-family: 'inter';
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #0857cf;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #0857cf;
+}
+
+span.dica {
+    text-align: center;
+    font-family: 'inter';
+    margin-top: 10px;
+    color: #838383;
+    margin-bottom: 5px;
+}
+
+span.dica > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+span#respostaResult {
+    margin-bottom: 10px;
+}
+
+span#pontosGame {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+    color: #4f4e4e;
+}
+
+span#pontosGame > span.numPontos {
+    font-weight: bold;
+}
+
+div#botoes > button#checkResp {
+    border: 2px solid #1498d1;
+    border-bottom: 4px solid #1498d1;
+    background-color: #1cb0f6;
+    color: #fff;
+}
+
+div#botoes > button#checkResp:active {
+    border: 2px solid #1498d1;
+    border-top: 4px solid #1498d1;
+    background-color: #1cb0f6;
+    color: #fff;
+}
+
+div#botoes > button#gerarNovoDesafio {
+    border: 2px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
+    background-color: #fff;
+    color: #4f4e4e;
+}
+
+div#botoes > button#gerarNovoDesafio:active {
+    border: 2px solid #e5e5e5;
+    border-top: 4px solid #e5e5e5;
+    background-color: #fff;
+    color: #4f4e4e;
+}
+
+span.copyright {
+    margin-top: 20px;
+    color: #4f4e4e;
+}

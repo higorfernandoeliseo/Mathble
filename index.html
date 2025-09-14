@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Matemática</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <h1><img src="assets/images/logo-game.png"></h1>
+        <span class="dica">
+            <span>Você se acha bom em Matemática?</span>
+            Clique no botão gerar Novo para começar.
+        </span>
+
+        <div id="matrix"></div>
+
+        <span id="respostaResult" class="testerResp">Resposta: </span>
+
+        <div id="botoes">
+            <input type="text" id="txtResposta" value="" autocomplete="off" />
+            <button id="checkResp">Checar resposta!</button>
+            <button id="gerarNovoDesafio">Novo desafio</button>
+        </div>
+
+        <span id="pontosGame"></span>
+    </div>
+
+    <span class="copyright">Desenvolvido por Igor Eliseo.</span>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
+</body>
+</html>
