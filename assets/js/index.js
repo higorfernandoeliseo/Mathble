@@ -158,9 +158,10 @@ const gerarMatriz=() => {
 
     }
 
+    novoDesafio.innerHTML = 'Novo Desafio';
     pontosSpan.innerHTML = `Pontos: <span class="numPontos">${pontosGame}</span>`;
     imprimeRes.innerHTML = 'Resposta: '+eval(desafio);
-    currentAwenser =  desafio
+    currentAwenser =  desafio;
 
 }
 
